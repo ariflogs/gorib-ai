@@ -1,13 +1,30 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>gorib ai</title>
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>gorib ai</title>
+
+	<!--Start of Featurebase Script-->
+	<script>!(function (e, t) { var a = "featurebase-sdk"; function n() { if (!t.getElementById(a)) { var e = t.createElement("script"); (e.id = a), (e.src = "https://do.featurebase.app/js/sdk.js"), t.getElementsByTagName("script")[0].parentNode.insertBefore(e, t.getElementsByTagName("script")[0]) } }; "function" != typeof e.Featurebase && (e.Featurebase = function () { (e.Featurebase.q = e.Featurebase.q || []).push(arguments) }), "complete" === t.readyState || "interactive" === t.readyState ? n() : t.addEventListener("DOMContentLoaded", n) })(window, document);</script>
+
+	<script>
+		Featurebase("boot", {
+			appId: "69e15e3f136d3c4f76116f2c",         // required
+			createdAt: "2025-05-06T12:00:00Z", // optional
+			theme: "light",                    // "light" or "dark"
+			language: "en",                     // short code (e.g. "en", "de", etc.)
+		});
+	</script>
+
+	
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>
