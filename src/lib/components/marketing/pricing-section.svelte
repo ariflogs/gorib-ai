@@ -50,7 +50,7 @@
 							</div>
 							<div class="flex items-center gap-3">
 								<div class="p-2 bg-purple-500/10 rounded-lg">
-									<span class="size-5 text-purple-500 font-bold text-xs flex items-center justify-center">DS</span>
+									<span class="size-5 text-blue-500 font-bold text-xs flex items-center justify-center">DS</span>
 								</div>
 								<p class="text-sm font-medium">DeepSeek V3</p>
 							</div>
@@ -60,7 +60,14 @@
 								</div>
 								<p class="text-sm font-medium">Claude Haiku 4.5</p>
 							</div>
+							<div class="flex items-center gap-3">
+								<div class="p-2 bg-purple-500/10 rounded-lg">
+									<span class="size-5 text-purple-500 font-bold text-xs flex items-center justify-center">KM</span>
+								</div>
+								<p class="text-sm font-medium">Kimi 2.5</p>
+							</div>
 						</div>
+
 					</div>
 
 					<Button class="w-full mt-6" size="lg" variant="outline" href="/select-plan/basic">
