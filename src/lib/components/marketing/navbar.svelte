@@ -13,7 +13,7 @@
 			<!-- Logo -->
 			<a href="/" class="flex items-center gap-2 group">
 				<div class="p-1.5 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-					<SparklesIcon class="size-5 text-primary" />
+					<img src="/logo.png" alt="GoribAI" class="size-5" />
 				</div>
 				<span class="text-xl font-bold">
 					GoribAI
