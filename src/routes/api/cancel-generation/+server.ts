@@ -1,3 +1,37 @@
+/**
+ * TEMPORARY: Cancellation feature disabled
+ *
+ * This endpoint has been temporarily disabled because AI generation has been moved to Convex actions,
+ * which don't support the AbortController pattern used here.
+ *
+ * To re-enable cancellation:
+ * 1. Add a "cancelled" field to the conversations table
+ * 2. In the Convex action, check this field periodically during streaming
+ * 3. If cancelled is true, break out of the stream loop
+ * 4. Update this endpoint to set the cancelled field instead of using AbortController
+ */
+
+import { error, json, type RequestHandler } from '@sveltejs/kit';
+
+export type CancelGenerationResponse = {
+	ok: false;
+	error: string;
+};
+
+function response(res: CancelGenerationResponse) {
+	return json(res);
+}
+
+export const POST: RequestHandler = async ({ request }) => {
+	// Cancellation temporarily disabled
+	return response({
+		ok: false,
+		error: 'Cancellation feature temporarily disabled. Will be re-enabled in a future update.',
+	});
+};
+
+/* ORIGINAL CODE - Keep for reference when re-implementing
+
 import { api } from '$lib/backend/convex/_generated/api';
 import type { Id } from '$lib/backend/convex/_generated/dataModel';
 import { error, json, type RequestHandler } from '@sveltejs/kit';
@@ -86,3 +120,5 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	return response({ ok: true, cancelled });
 };
+
+*/
