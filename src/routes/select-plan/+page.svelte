@@ -16,8 +16,9 @@
 			models: [
 				{ icon: OpenAIIcon, name: 'GPT-5 mini', color: 'emerald' },
 				{ icon: GoogleIcon, name: 'Gemini 2.5 Flash', color: 'blue' },
-				{ icon: null, name: 'DeepSeek V3', color: 'purple', badge: 'DS' },
-				{ icon: AnthropicIcon, name: 'Claude Haiku 4.5', color: 'orange' }
+				{ icon: null, name: 'DeepSeek V3', color: 'blue', badge: 'DS' },
+				{ icon: AnthropicIcon, name: 'Claude Haiku 4.5', color: 'orange' },
+				{ icon: null, name: 'Kimi 2.5', color: 'purple', badge: 'KM' }
 			]
 		},
 		{
