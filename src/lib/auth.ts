@@ -9,16 +9,13 @@ import { env as privateEnv } from '$env/dynamic/private';
 const client = new ConvexHttpClient(env.PUBLIC_CONVEX_URL!);
 
 export const auth = betterAuth({
+	baseURL: env.PUBLIC_BASE_URL,
 	secret: privateEnv.BETTER_AUTH_SECRET!,
 	database: convexAdapter(client),
 	socialProviders: {
 		google: {
 			clientId: privateEnv.GOOGLE_CLIENT_ID!,
 			clientSecret: privateEnv.GOOGLE_CLIENT_SECRET!,
-		},
-		github: {
-			clientId: privateEnv.GITHUB_CLIENT_ID!,
-			clientSecret: privateEnv.GITHUB_CLIENT_SECRET!,
 		},
 	},
 	databaseHooks: {

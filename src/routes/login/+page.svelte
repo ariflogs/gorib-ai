@@ -4,10 +4,6 @@
 	import { authClient } from '$lib/backend/auth/client.js';
 	import DeviconGoogle from '~icons/devicon/google';
 
-	async function signInGitHub() {
-		await authClient.signIn.social({ provider: 'github', callbackURL: '/chat' });
-	}
-
 	async function signInGoogle() {
 		await authClient.signIn.social({ provider: 'google', callbackURL: '/chat' });
 	}
